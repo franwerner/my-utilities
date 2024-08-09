@@ -12,6 +12,7 @@ type Entries<T> = [keyof T, T[keyof T]][]
 
 type Keys<T> = Array<keyof T>
 
+
 declare global {
   interface ObjectConstructor {
     fromEntries<T>(array: T): FromEntriesWithReadOnly<T>,
