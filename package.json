@@ -1,0 +1,14 @@
+{
+    "name": "myUtilities",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+     
+    },
+    "dependencies": {
+         "uuid4": "^2.0.3"
+    },
+    "author": "",
+    "license": "ISC"
+  }
