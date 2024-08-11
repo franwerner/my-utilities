@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
-  "types": "dist/src/lib/index.d.ts",
+  "types": "dist/lib/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
