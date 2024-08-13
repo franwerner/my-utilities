@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     dts({
       tsconfigPath: "./tsconfig.json",
+      insertTypesEntry : true,
     }),
   ],
   resolve: {
@@ -15,6 +16,7 @@ export default defineConfig({
   },
   build: {
     outDir : "dist",
+    watch : {},
     lib: {
       entry: path.resolve(__dirname, 'lib/index.ts'),
       name: 'index',
