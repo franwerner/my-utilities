@@ -1,4 +1,4 @@
-import isString from "./isString"
+import isString from "@my-utilities/utils/isString"
 
 type Callback<T, U> = (value: T)  => U
 

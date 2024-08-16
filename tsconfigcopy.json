@@ -22,5 +22,5 @@
       "@my-utilities/*": ["./src/*"],
     }
   },
-  "include": ["src","lib"]
+  "include": ["src","lib", "src/globals.type.ts",]
 }

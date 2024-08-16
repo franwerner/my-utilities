@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import path from "path"
 import dts from 'vite-plugin-dts'
+import base from "../../vite.base.config"
 
 export default defineConfig({
   plugins: [
@@ -9,14 +10,8 @@ export default defineConfig({
       insertTypesEntry : true,
     }),
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
   build: {
     outDir : "dist",
-    watch : {},
     lib: {
       entry: path.resolve(__dirname, 'lib/index.ts'),
       name: 'index',
@@ -24,4 +19,5 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
   },
+  ...base
 })
