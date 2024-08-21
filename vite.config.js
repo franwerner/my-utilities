@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import path from "path"
 import dts from 'vite-plugin-dts'
-import base from "../../vite.base.config"
+import alias from "../../alias.config"
 
 export default defineConfig({
   plugins: [
@@ -10,6 +10,9 @@ export default defineConfig({
       insertTypesEntry : true,
     }),
   ],
+  resolve : {
+    alias
+  },
   build: {
     outDir : "dist",
     lib: {
@@ -19,5 +22,4 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
   },
-  ...base
 })
