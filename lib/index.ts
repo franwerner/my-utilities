@@ -10,6 +10,7 @@ export {default as isObject} from "../src/utils/isObject"
 export {default as isString} from "../src/utils/isString"
 export {default as pipe} from "../src/utils/pipe"
 export * from "../src/utils/reemplaceString"
+export * from "../src/utils/ErrorHandler"
 
 /*@TYPES-FOLDER*/
 export * from "../src/types/RequiredAllProperties"
