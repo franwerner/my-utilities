@@ -1,4 +1,4 @@
-import isString from "@my-utilities/utils/isString"
+import isString from "@my-utilities/utils/isString.js"
 
 type Callback<T, U> = (value: T)  => U
 
