@@ -1,17 +1,17 @@
 import { defineConfig } from 'vite'
 import path from "path"
 import dts from 'vite-plugin-dts'
-import alias from "../../alias.config"
 
 export default defineConfig({
   plugins: [
     dts({
       tsconfigPath: "./tsconfig.json",
-      insertTypesEntry : true,
     }),
   ],
   resolve : {
-    alias
+    alias : {
+      "@" : path.resolve(__dirname,"src")
+    }
   },
   build: {
     outDir : "dist",
