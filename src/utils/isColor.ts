@@ -4,4 +4,4 @@ const isColor = (strColor:any) => {
     return s.color !== '';
 }
 
-export default isColor
+export default isColor //QUITAR ESTO ES DE WEB-

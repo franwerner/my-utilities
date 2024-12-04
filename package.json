@@ -6,6 +6,12 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/lib/index.d.ts",
+  "exports" : {
+    "." : {
+      "import" : "./dist/index.es.js",
+      "require" : "./dist/index.umc.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
