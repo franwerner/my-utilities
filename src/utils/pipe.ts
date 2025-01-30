@@ -4,4 +4,4 @@ const pipe = <T extends Function>(...functions: T[]) => {
         return functions.reduce((acc, fn) => fn(acc), input);
     };
 };
-export default pipe
+export {pipe}

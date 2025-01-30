@@ -1,2 +1,1 @@
-const isBoolean = (n:any):n is boolean => typeof n === "boolean" 
-export default isBoolean
+export const isBoolean = (n:any):n is boolean => typeof n === "boolean" 

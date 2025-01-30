@@ -1,7 +1,0 @@
-const isColor = (strColor:any) => {
-    const s = new Option().style;
-    s.color = strColor;
-    return s.color !== '';
-}
-
-export default isColor //QUITAR ESTO ES DE WEB-

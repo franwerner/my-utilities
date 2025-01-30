@@ -1,6 +1,7 @@
-import isString from "@/utils/isString"
+import {isString} from "@/utils/isString"
 
-type Callback<T, U> = (value: T)  => U
+
+type Callback<T, U> = (value: T) => U
 
 const groupBy = <T, U extends string>(array: T[], callback: Callback<T, U>) => {
 
@@ -27,4 +28,4 @@ const groupBy = <T, U extends string>(array: T[], callback: Callback<T, U>) => {
     return groupedObject
 }
 
-export default groupBy
+export { groupBy }
